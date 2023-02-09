@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+
+	<body style="background-color:black ;position: relative;color: white;" data-bs-spy="scroll" data-bs-target="#navbar">
+		<nav id="navbar">
+			<img src="images/download.jpg">
+			<ul>
+				<li><a href="#section1">Home</a></li>
+				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
+							search
+						</span> Search</a></li>
+				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
+							live_tv
+						</span> Live TVs </a></li>
+				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
+							local_movies
+						</span>Movies</a></li>
+				<li><a href="#section3"><span class="material-icons" style="font-size:10px;padding: 2px;">
+							desktop_windows
+						</span>TV shows</a></li>
+				<li><a href="#section2"><span class="material-icons" style="font-size:10px;padding: 2px;">
+							favorite_border
+						</span>Favourites</a></li>
+			</ul>
+			<select>
+				<option>Eng</option>
+				<option>Ru</option>
+				<option>Arm</option>
+			</select>
+			<div class="profile">
+				<img src="images/4140039.png" style="width: 50px;height:30px" />
+				<span style="padding:7px">And</span>
+			</div>
+		</nav>
+
+		<section id="section1" style="margin-top:85px">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div style="display: flex;">
+						<div id="animate">
+							<div>
+								<img class="title-image" src="images/02.jpg" />
+							</div>
+							<div class="title-text">
+								<p>2017</p>
+								<div class="age">+13</div>
+								<div class="hd">HD</div>
+								<p>2 hr 02 min.</p>
+							</div>
+							<div class="container-watch">
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										visibility
+									</span></div>
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										favorite
+									</span></div>
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										theaters
+									</span><button class="watch-button"><a class="new-page"
+											href="https://kinogo.io/22786-dzhon-uik-2-2017.html">Watch Now</a></button>
+								</div>
+							</div>
+						</div>
+
+
+						<div>
+							<img class="img" src="images/img1.jpg">
+						</div>
+					</div>
+				</div>
+
+				<!-- second slide -->
+				<div class="mySlides fade">
+					<div style="display:flex ;">
+						<div id="animate">
+							<div>
+								<img class="title-image" src="images/narcos2.png" />
+							</div>
+							<div class="title-text">
+								<p>2015</p>
+								<div class="age">+18</div>
+								<div class="hd">HD</div>
+								<p>0 Season</p>
+							</div>
+							<div class="container-watch">
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										visibility
+									</span>
+								</div>
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										favorite
+									</span>
+								</div>
+								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
+										theaters
+									</span><button class="watch-button"><a class="new-page"
+											href="https://kinogo.io/22786-dzhon-uik-2-2017.html">Watch Now</a></button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img style="float:right" class="img" src="images/narcos.webp">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="text-align:center;padding-top: 5px;">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+			</div>
+		</section>
+		<section id="section2">
+			<div class="movies-container1" data-bs-spy="scroll">
+				<div>
+					<h3 class="fav-title">Favorites</h3>
+				</div>
+				<div class="favorite-container">
+					<div class="movie-list">
+						<img class="fav-movie-img" src="images/narcos-movies1.jpg" />
+					</div>
+					<div class="movie-list">
+						<img class="fav-movie-img" src="images/johnwick2.jpg" />
+					</div>
+					<div class="movie-list">
+						<img class="fav-movie-img" src="images/john-wick-chapter-1.jpg" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section3">
+			<h3 class = "add-title">Last Added</h3>
+			<div id="carousel" class="carousel">
+				<button class="arrow prev"><</button>
+				<div class="gallery">
+				  <ul>
+					<li><img src="images/john-wick-chapter-1.jpg"></li>
+					<li><img src="images/johnwick2.jpg"></li>
+					<li><img src="images/narcos-movies1.jpg"></li>
+					<li><img src="images/img1.jpg"></li>
+					<li><img src="images/narcos-movies1.jpg"></li>
+					<li><img src="images/john-wick-chapter-1.jpg"></li>
+					<li><img src="images/johnwick2.jpg"></li>
+					<li><img src="images/narcos-movies1.jpg"></li>
+					<li><img src="images/img1.jpg"></li>
+					<li><img src="images/narcos-movies1.jpg"></li>
+				  </ul>
+				</div>
+				<button class="arrow next">></button>
+			  </div>
+		</section>
+		<section id="section4">
+			<h3 class = "watch-title">Continue Watching</h3>
+			<div class="watching-container">
+				<div class="watching-container-list">
+					<div class="watching-img-container">
+						<img class="watching-container-list-img" src="images/john-wick-chapter-1.jpg"/>
+					</div>
+					<div class="watching-img-container">
+						<img class="watching-container-list-img" src="images/john-wick-chapter-1.jpg"/>
+					</div>
+					<div class="watching-img-container">
+						<img class="watching-container-list-img" src="images/john-wick-chapter-1.jpg"/>
+					</div>
+					<div class="watching-img-container">
+						<img class="watching-container-list-img" src="images/john-wick-chapter-1.jpg"/>
+					</div>
+				</div>	
+		    </div>
+		</section>
+		<script src="main.js"></script>
+	</body>
+
+</html>
