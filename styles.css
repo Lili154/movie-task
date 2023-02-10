@@ -51,10 +51,6 @@ nav .profile {
 	padding: 10px;
 }
 
-
-
-/*  */
-
 .mySlides {
 	display: none
 }
@@ -63,18 +59,12 @@ img {
 	vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
 	max-width: 100%;
 	position: relative;
 	margin: auto;
 }
 
-/* Next & previous buttons */
-
-
-
-/* The dots/bullets/indicators */
 .dot {
 	cursor: pointer;
 	height: 15px;
@@ -91,7 +81,6 @@ img {
 	background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
@@ -107,9 +96,6 @@ img {
 	}
 }
 
-
-
-/*  */
 section {
 	margin-top: 15px;
 }
@@ -238,12 +224,17 @@ section {
 	height: 5px;
 	border-radius: 10px;
 	background: rgb(43, 42, 42);
+	overflow: hidden;
 	cursor: pointer;
 }
 
 .seek-bar::-webkit-slider-thumb {
 	-webkit-appearance: none;
+	width: 1px;
+	height: 20px;
+	box-shadow:-400px 0 0 400px rgb(83, 81, 81);
 }
+
 
 .arrow {
 	position: absolute;
