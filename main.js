@@ -54,3 +54,30 @@ let slideIndex = 1;
       position = Math.max(position, -width * (listElems.length - count));
       list.style.marginLeft = position + 'px';
     };
+
+    let a = 1;
+    for(let li of carousel2.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${a}</span>`);
+      a++;
+    }
+
+    
+    let widthimg = 130; 
+    let countimg = 3; 
+
+    let listimg = carousel2.querySelector('ul');
+    let listElemsimg = carousel2.querySelectorAll('li');
+
+    let positionimg = 0; 
+    carousel2.querySelector('.prev2').onclick = function() {
+      positionimg += widthimg * countimg;
+      positionimg = Math.min(positionimg, 0)
+      list.style.marginLeft = positionimg + 'px';
+    };
+
+    carousel2.querySelector('.next2').onclick = function() {
+      positionimg -= widthimg * countimg;
+      positionimg = Math.max(positionimg, -widthimg * (listElemsimg.length - countimg));
+      listimg.style.marginLeft = positionimg + 'px';
+    };
