@@ -217,6 +217,7 @@ section {
 	transform: scale(1.1);
 }
 
+
 .seek-bar {
 	-webkit-appearance: none;
 	width: 300px;
@@ -265,7 +266,12 @@ section {
 .next {
 	right: 7px;
 }
-
+#prevSlide{
+	top:102rem;
+}
+#nextSlide{
+	top: 102rem;
+}
 .gallery {
 	width: 100%;
 	height: 200px;
@@ -338,9 +344,15 @@ section {
 
 .tv-container {
 	display: flex;
+	position: relative;
+	width: 95%;
+	padding: 10px 40px;
+	
 
 }
-
+.tv-container .tv-list{
+	display: block;
+}
 
 .add-title {
 	margin-left: 50px;

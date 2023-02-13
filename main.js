@@ -45,4 +45,28 @@
       list.style.marginLeft = position + 'px';
     };
 
-   
+  
+
+const carousel2 = document.querySelector("#carousel-2 .tv-container");
+const items = document.querySelectorAll("#carousel-2 .tv-list-img");
+
+let currentItem = 0;
+
+function prevSlide() {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = items.length - 1;
+  }
+  carousel2.style.transform = `translateX(${currentItem * 20}%)`;
+}
+
+function nextSlide() {
+  currentItem++;
+  if (currentItem >= items.length) {
+    currentItem = 0;
+  }
+  carousel2.style.transform = `translateX(${currentItem * 20}%)`;
+}
+
+document.querySelector("#prevSlide").addEventListener("click", prevSlide);
+document.querySelector("#nextSlide").addEventListener("click", nextSlide)
