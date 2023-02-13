@@ -320,11 +320,6 @@ section {
 	transform: scale(1.1);
 }
 
-.tv-container1 {
-	padding: 10px;
-	color: #ffffff;
-}
-
 .tv-title {
 	margin-top: 10px;
 	margin-left: 50px;
@@ -343,6 +338,8 @@ section {
 }
 
 .tv-container {
+	
+	color: #ffffff;
 	display: flex;
 	position: relative;
 	width: 95%;
@@ -351,7 +348,7 @@ section {
 
 }
 .tv-container .tv-list{
-	display: block;
+	display:block;
 }
 
 .add-title {

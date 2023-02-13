@@ -1,5 +1,3 @@
-
-
       let slideIndex = 0;
       showSlides()
 
@@ -21,52 +19,40 @@
       }
 
 
-    var lis = document.getElementsByTagName('li');
-    for (var i = 0; i < lis.length; i++) {
-    }
+   
+const carousels = [
+  {
+    carousel: document.querySelector("#carousel-1"),
+    btnPrev: document.querySelector("#btn-prev-1"),
+    btnNext: document.querySelector("#btn-next-1")
+  },
+  {
+    carousel: document.querySelector("#carousel-2"),
+    btnPrev: document.querySelector("#btn-prev-2"),
+    btnNext: document.querySelector("#btn-next-2")
+  }
+];
 
-    let width = 200; 
-    let count = 4; 
+const width = 200; 
+const count = 3; 
+let position = 0;
 
-    var carousel = document.getElementById('carousel');
-    let list = carousel.querySelector('ul');
-    let listElems = carousel.querySelectorAll('li');
-
-    let position = 0; 
-    carousel.querySelector('.prev').onclick = function() {
-      position += width * count;
-      position = Math.min(position, 0)
-      list.style.marginLeft = position + 'px';
-    };
-
-    carousel.querySelector('.next').onclick = function() {
-      position -= width * count;
-      position = Math.max(position, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-    };
-
+carousels.forEach(({ carousel, btnPrev, btnNext }) => {
+  let currentSlide = 0;
+  const slides = carousel.children;
+  let list = carousel.querySelector('.slides');
+  let listElems = carousel.querySelectorAll('.slide');
   
+  btnPrev.addEventListener("click", () => {
+    position += width * count;
+    position = Math.min(position, 0)
+    list.style.marginLeft = position + 'px';
+  });
 
-const carousel2 = document.querySelector("#carousel-2 .tv-container");
-const items = document.querySelectorAll("#carousel-2 .tv-list-img");
-
-let currentItem = 0;
-
-function prevSlide() {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = items.length - 1;
-  }
-  carousel2.style.transform = `translateX(${currentItem * 20}%)`;
-}
-
-function nextSlide() {
-  currentItem++;
-  if (currentItem >= items.length) {
-    currentItem = 0;
-  }
-  carousel2.style.transform = `translateX(${currentItem * 20}%)`;
-}
-
-document.querySelector("#prevSlide").addEventListener("click", prevSlide);
-document.querySelector("#nextSlide").addEventListener("click", nextSlide)
+  btnNext.addEventListener("click", () => {
+    position -= width * count;
+    position = Math.max(position, -width * (listElems.length - count));
+    list.style.marginLeft = position + 'px';
+  });
+  
+});
