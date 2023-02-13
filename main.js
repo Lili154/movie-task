@@ -21,19 +21,14 @@
       }
 
 
-
-
-      let i = 1;
-    for(let li of carousel.querySelectorAll('li')) {
-      li.style.position = 'relative';
-      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-      i++;
+    var lis = document.getElementsByTagName('li');
+    for (var i = 0; i < lis.length; i++) {
     }
 
-    
-    let width = 130; 
-    let count = 3; 
+    let width = 200; 
+    let count = 4; 
 
+    var carousel = document.getElementById('carousel');
     let list = carousel.querySelector('ul');
     let listElems = carousel.querySelectorAll('li');
 

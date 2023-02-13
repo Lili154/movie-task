@@ -148,8 +148,7 @@ section {
 
 #animate {
 	position: relative;
-	animation: mymove 3s;
-	animation-timing-function: ease-left;
+	animation: mymove 7s;
 }
 
 @keyframes mymove {
