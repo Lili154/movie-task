@@ -54,5 +54,5 @@ carousels.forEach(({ carousel, btnPrev, btnNext }) => {
     position = Math.max(position, -width * (listElems.length - count));
     list.style.marginLeft = position + 'px';
   });
-  
+  console.log(slides)
 });
