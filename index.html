@@ -7,7 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://kit.fontawesome.com/d33355e4f9.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+		<script src="https://kit.fontawesome.com/d33355e4f9.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body style="background-color:black ;position: relative;color: white;">
@@ -15,21 +18,11 @@
 			<img src="images/download.jpg">
 			<ul>
 				<li><a href="#section1">Home</a></li>
-				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
-							search
-						</span> Search</a></li>
-				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
-							live_tv
-						</span> Live TVs </a></li>
-				<li><a href=""><span class="material-icons" style="font-size:10px;padding: 2px;">
-							local_movies
-						</span>Movies</a></li>
-				<li><a href="#section3"><span class="material-icons" style="font-size:10px;padding: 2px;">
-							desktop_windows
-						</span>TV shows</a></li>
-				<li><a href="#section2"><span class="material-icons" style="font-size:10px;padding: 2px;">
-							favorite_border
-						</span>Favourites</a></li>
+				<li><a href=""><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
+				<li><a href=""><i class="fa-solid fa-tv"></i> Live TVs </a></li>
+				<li><a href=""><i class="fa fa-film"></i>Movies</a></li>
+				<li><a href="#section3"><i class="fa-solid fa-tv"></i>TV shows</a></li>
+				<li><a href="#section2"><i class="fa fa-heart"></i>Favourites</a></li>
 			</ul>
 			<select>
 				<option>Eng</option>
@@ -38,14 +31,14 @@
 			</select>
 			<div class="profile">
 				<img src="images/4140039.png" style="width: 50px;height:30px" />
-				<span style="padding:7px">And</span>
+				<p>And</p>
 			</div>
 		</nav>
 
-		<section id="section1" style="margin-top:85px">
+		<section id="section1">
 			<div class="slideshow-container">
 				<div class="mySlides fade">
-					<div style="display: flex;">
+					<div class="slideshow-wrapper">
 						<div id="animate">
 							<div>
 								<img class="title-image" src="images/02.jpg" />
@@ -57,15 +50,9 @@
 								<p>2 hr 02 min.</p>
 							</div>
 							<div class="container-watch">
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										visibility
-									</span></div>
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										favorite
-									</span></div>
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										theaters
-									</span><button class="watch-button"><a class="new-page"
+								<div class="icon-container"><i class="fa fa-eye"></i></div>
+								<div class="icon-container"><i class="fa fa-heart"></i></div>
+								<div class="icon-container"><i class="fa fa-film"></i><button class="watch-button"><a class="new-page"
 											href="https://kinogo.io/22786-dzhon-uik-2-2017.html">Watch Now</a></button>
 								</div>
 							</div>
@@ -73,7 +60,7 @@
 
 
 						<div>
-							<img class="img" src="images/47058526a77b91f71054d25590f20210.jpg">
+							<img class="img" src="images/img1.jpg">
 						</div>
 					</div>
 				</div>
@@ -92,17 +79,9 @@
 								<p>0 Season</p>
 							</div>
 							<div class="container-watch">
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										visibility
-									</span>
-								</div>
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										favorite
-									</span>
-								</div>
-								<div class="icon-container"><span class="material-icons" style="font-size: 15px;">
-										theaters
-									</span><button class="watch-button"><a class="new-page"
+								<div class="icon-container"><i class="fa fa-eye"></i></div>
+								<div class="icon-container"><i class="fa fa-heart"></i></div>
+								<div class="icon-container"><i class="fa fa-film"></i><button class="watch-button"><button class="watch-button"><a class="new-page"
 											href="https://kinokrad.cc/306671-narko-2-sezon.html">Watch Now</a></button>
 								</div>
 							</div>
@@ -120,36 +99,38 @@
 		</section>
 		<section id="section2">
 			<div class="movies-container1">
-				<div>
+				<div class="section-title-container">
 					<h3 class="fav-title">Favorites</h3>
 				</div>
 				<div class="favorite-container">
 					<div class="movie-list">
+						<img class="fav-movie-img" src="images/img6.jpg" />
+					</div>
+					<div class="movie-list">
 						<img class="fav-movie-img" src="images/narcos-movies1.jpg" />
 					</div>
 					<div class="movie-list">
-						<img class="fav-movie-img" src="images/johnwick2.jpg" />
-					</div>
-					<div class="movie-list">
-						<img class="fav-movie-img" src="images/john-wick-chapter-1.jpg" />
+						<img class="fav-movie-img" src="images/img3.png" />
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="section3">
-			<h3 class="add-title">Last Added</h3>
+			<div class="section-title-container">
+				<h3 class="fav-title">Last added</h3>
+			</div>
 			<div id="carousel-1" class="carousel">
 				<button class="arrow prev" id="btn-prev-1"> <span class='material-icons'>arrow_back_ios</span>
 				</button>
 				<div class="gallery">
 					<ul class="slides">
-						<li class="slide"><img class="movie-img " src="images/john-wick-chapter-1.jpg"></li>
-						<li class="slide"><img class="movie-img" src="images/johnwick2.jpg"></li>
+						<li class="slide"><img class="movie-img " src="images/img3.png"></li>
+						<li class="slide"><img class="movie-img" src="images/img6.jpg"></li>
 						<li class="slide"><img class="movie-img " src="images/narcos-movies1.jpg"></li>
-						<li class="slide"><img class="movie-img " src="images/img1.jpg"></li>
+						<li class="slide"><img class="movie-img " src="images/img4.webp"></li>
 						<li class="slide"><img class="movie-img " src="images/narcos-movies1.jpg"></li>
-						<li class="slide"><img class="movie-img" src="images/john-wick-chapter-1.jpg"></li>
-						<li class="slide"><img class="movie-img" src="images/johnwick2.jpg"></li>
+						<li class="slide"><img class="movie-img" src="images/img3.png"></li>
+						<li class="slide"><img class="movie-img" src="images/img6.jpg"></li>
 						<li class="slide"><img class="movie-img" src="images/narcos-movies1.jpg"></li>
 						<li class="slide"><img class="movie-img" src="images/img1.jpg"></li>
 						<li class="slide"><img class="movie-img" src="images/narcos-movies1.jpg"></li>
@@ -160,19 +141,21 @@
 			</div>
 		</section>
 		<section id="section4">
-			<h3 class="watch-title">Continue Watching</h3>
+			<div class="section-title-container">
+				<h3 class="fav-title">Continue Watching</h3>
+			</div>
 			<div class="watching-container">
 				<div class="watching-container-list">
 					<div class="watching-img-container">
-						<img class="watching-container-list-img" src="images/john-wick-chapter-1.jpg" />
+						<img class="watching-container-list-img" src="images/img3.png" />
 						<input type="range" value="0" class="seek-bar" />
 					</div>
 					<div class="watching-img-container">
-						<img class="watching-container-list-img" src="images/5ad03b38aaecb1ee87ef16790ea26d.jpg">
+						<img class="watching-container-list-img" src="images/img4.webp">
 						<input type="range" value="0" class="seek-bar" />
 					</div>
 					<div class="watching-img-container">
-						<img class="watching-container-list-img" src="images/proklyate-turandot-2021_156785_0.jpg" />
+						<img class="watching-container-list-img" src="images/img2.png" />
 						<input type="range" value="0" class="seek-bar" />
 					</div>
 					<div class="watching-img-container">
@@ -183,11 +166,10 @@
 			</div>
 		</section>
 		<section id="section5">
-			<div class="tv-container1">
-				<div>
-					<h3 class="tv-title">Favorites live TV</h3>
-				</div>
-				<div class="tv-container">
+			<div class="section-title-container">
+				<h3 class="fav-title">Favourite live TV</h3>
+			</div>
+				<div class="tv-container1">
 					<div class="tv-list">
 						<img class="tv-list-img" src="images/3.png" />
 					</div>
@@ -201,14 +183,16 @@
 			</div>
 		</section>
 		<section id="section6">
+			<div class="section-title-container">
+				<h3 class="fav-title">Favourite live TV</h3>
+			</div>
 			<div class="tv-container">
+				
 				<div class="gallery">
-					<div>
-						<h3 class="tv-title">Favorites live TV</h3>
-					</div>
-					<button class="arrow prev" id="btn-prev-2"> <span class='material-icons'>arrow_back_ios</span>
-					</button>
+					
 					<div class="carousel" id="carousel-2">
+						<button class="arrow prev" id="btn-prev-2"> <span class='material-icons'>arrow_back_ios</span>
+						</button>
 						<ul class="slides" >
 							<li class="slide"><img class="tv-list-img" src="images/3.png"></li>
 							<li class="slide"><img class="tv-list-img" src="images/nickelodeon_2009.png"></li>
@@ -224,6 +208,10 @@
 									src="images/telekanal_nat_geo_wild_smenit_nazvanie_na_national_geographic_wild_hd.jpg">
 							</li>
 							<li class="slide"><img class="tv-list-img " src="images/images.png"></li>
+							<li class="slide"><img class="tv-list-img "
+								src="images/telekanal_nat_geo_wild_smenit_nazvanie_na_national_geographic_wild_hd.jpg">
+						</li>
+						<li class="slide"><img class="tv-list-img " src="images/images.png"></li>
 						</ul>
 					</div>
 					<button class="arrow next" id="btn-next-2"><span class='material-icons'>arrow_forward_ios</span>
@@ -233,22 +221,22 @@
 		</section>
 		<section id="section7">
 			<div class="movies-container1">
-				<div>
+			    <div class="section-title-container">
 					<h3 class="fav-title">John Wick collaction</h3>
 				</div>
 				<div class="favorite-container">
 					<div class="movie-list">
-						<img class="fav-movie-img" src="images/john-wick-chapter-1.jpg" />
+						<img class="fav-movie-img" src="images/img3.png" />
 					</div>
 					<div class="movie-list">
-						<img class="fav-movie-img" src="images/johnwick2.jpg" />
+						<img class="fav-movie-img" src="images/img6.jpg" />
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="section8">
 			<div class="movies-container1">
-				<div>
+				<div class="section-title-container">
 					<h3 class="fav-title">Some tutorial</h3>
 				</div>
 				<div class="favorite-container">
