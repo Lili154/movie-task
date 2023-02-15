@@ -223,6 +223,10 @@ img {
 	width: 900px;
 	height: 500px;
 }
+.dots{
+	text-align:center;
+	padding-top: 5px;	
+}
 section {
 	width: 100%;
 	color: white;

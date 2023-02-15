@@ -1,4 +1,13 @@
-      let slideIndex = 0;
+    // nav toggle
+      const toggleButton = document.getElementById("toggle-button")
+      const navList = document.getElementById('nav-list')
+
+      toggleButton.addEventListener('click',()=>{
+        navList.classList.toggle('active')
+      })
+    
+    //  section slider
+     let slideIndex = 0;
       showSlides()
 
       function showSlides() {
@@ -18,7 +27,7 @@
         setTimeout(showSlides,2000)
       }
 
-
+// section carousel
    
 const carousels = [
   {
@@ -57,9 +66,4 @@ carousels.forEach(({ carousel, btnPrev, btnNext }) => {
   console.log(slides)
 });
 
-const toggleButton = document.getElementById("toggle-button")
-const navList = document.getElementById('nav-list')
 
-toggleButton.addEventListener('click',()=>{
-  navList.classList.toggle('active')
-})
