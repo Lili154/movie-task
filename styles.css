@@ -43,6 +43,10 @@ nav .profile {
 	color: white;
 	padding: 10px;
 }
+.profile img{
+	width: 40px;
+	height: 30px;
+}
 .profile p{
 	padding: 5px;
 }
