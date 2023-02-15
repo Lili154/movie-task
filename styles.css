@@ -67,7 +67,7 @@ nav .profile {
 	background-color: white;
 	margin-bottom:4px;
 }
-@media all and (max-width: 480px){
+@media all and (max-width: 600px){
  nav ul{
 	flex-direction: column;
 	position: relative;
@@ -206,7 +206,7 @@ img {
 
 #animate {
 	position: relative;
-	animation: mymove 7s;
+	animation: mymove 5s;
 }
 
 @keyframes mymove {
@@ -243,7 +243,7 @@ section {
 	width: 300px;
 	height: 180px;
 	margin: 15px;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .fav-movie-img:hover {
@@ -265,7 +265,7 @@ section {
 	width: 300px;
 	height: 180px;
 	display: block;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .carousel .movie-img:hover {
@@ -322,6 +322,9 @@ section {
 .next {
 	right: 7px;
 }
+.prev2{
+	left:0;
+}
 #prevSlide{
 	top:102rem;
 }
@@ -365,7 +368,7 @@ section {
 .watching-container-list-img {
 	height: 180px;
 	width: 300px;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .watching-img-container {
@@ -385,7 +388,7 @@ section {
 	width: 200px;
 	height: 130px;
 	margin: 16px;
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .tv-list-img:hover {
